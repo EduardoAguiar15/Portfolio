@@ -4,9 +4,9 @@ import NotFound from '../../components/NotFound/NotFound'
 const index = () => {
   return (
     <>
-    <NotFound />
+      <NotFound />
     </>
   )
 }
 
-export default index
+export default index;

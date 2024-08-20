@@ -1,5 +1,34 @@
 :root {
-    --preto-gradient: linear-gradient(90deg, rgb(17, 17, 17) 10%, rgb(40, 21, 56));
-    background: (90deg, rgb(239, 234, 234) 10%, rgb(40, 21, 56)); 
+    --font-family: 'Mouse Memoirs', sans-serif;
+
+    --black-button: rgb(41, 40, 40);
+    --blue-header: rgb(0,162,2032);
+    --background-gradient: linear-gradient(90deg, rgb(17, 17, 17) 10%, rgb(40, 21, 56));
+    --background-black: rgb(19 15 22);
+    --light-blue: rgb(0, 162, 232);
+    --white: rgb(255, 255, 255);
+    --dark-bg: rgb(41, 40, 40);
+    --blue-button: rgb(0, 162, 232);
+    --gray-bg: rgb(40, 21, 56);
+
+  }  
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-blue) rgb(40,21,56);
 }
-  
+
+body {
+  background: var(--background-gradient);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

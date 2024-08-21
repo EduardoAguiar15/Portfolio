@@ -39,12 +39,13 @@ export const useActiveLink = () => {
     scroller.scrollTo(to, {
       smooth: true,
       duration: 500,
-      onAfter: () => {
-        setActiveLink(to);
-        window.history.pushState(null, null, `#${to}`);
-      },
     });
-  }; 
-
+  
+    setTimeout(() => {
+      setActiveLink(to);
+      window.location.hash = to;
+    }, 500);
+  };
+  
   return { activeLink, handleLinkClick };
 };

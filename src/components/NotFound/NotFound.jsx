@@ -20,7 +20,7 @@ const NotFound = () => {
                     {t("notFound")}
                 </h2>
                 <h3>
-                    <a href="/#inicio">{t("notFoundLink")}</a>
+                    <a href="/">{t("notFoundLink")}</a>
                 </h3>
             </div>
         </StyledNotFound>

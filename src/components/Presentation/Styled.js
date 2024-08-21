@@ -25,6 +25,63 @@ export const StyledHome = styled.main`
     }
   }
 
+  .name {
+    font-family: 'Mouse Memoirs';
+    color: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    font-size: 5.5rem;
+
+    @media (max-height: 680px) {
+      margin: 0;
+    }
+
+    @media (max-width: 1240px){
+      font-size: 5.2rem;
+    }      
+
+    @media (max-width: 1100px){
+      font-size: 5rem;
+    } 
+
+    @media (max-width: 1060px){
+      font-size: 4.5rem;
+    }
+
+    @media (max-width: 980px){
+      font-size: 4rem;
+    }
+
+    @media (max-width: 900px){
+      font-size: 5rem;
+      margin-top: 0;
+    }
+    
+     @media (max-width: 480px) {
+       font-size: 4.5rem;
+     }
+
+    @media (max-width: 435px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 390px) {
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: 345px) {
+      font-size: 3rem;
+    }
+
+    .button{
+      width: 30%;
+    }
+  }
+
   .scroll {
     font-weight: bold;
     letter-spacing: 2px;
@@ -133,63 +190,6 @@ export const StyledHome = styled.main`
 
     @media (max-width: 486px) {
       width: 95%;
-    }
-
-    .name {
-      color: var(--white);
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 10px;
-      font-family: var(--font-family);
-      font-weight: 100;
-      letter-spacing: 0.1rem;
-      font-size: 5.5rem;
-
-      @media (max-height: 680px) {
-        margin: 0;
-      }
-
-      @media (max-width: 1240px){
-        font-size: 5.2rem;
-      }      
-
-      @media (max-width: 1100px){
-        font-size: 5rem;
-      } 
-
-      @media (max-width: 1060px){
-        font-size: 4.5rem;
-      }
-
-      @media (max-width: 980px){
-        font-size: 4rem;
-      }
-
-      @media (max-width: 900px){
-        font-size: 5rem;
-        margin-top: 0;
-      }
-      
-       @media (max-width: 480px) {
-         font-size: 4.5rem;
-       }
-
-      @media (max-width: 435px) {
-        font-size: 4rem;
-      }
-
-      @media (max-width: 390px) {
-        font-size: 3.5rem;
-      }
-
-      @media (max-width: 345px) {
-        font-size: 3rem;
-      }
-
-      .button{
-        width: 30%;
-      }
     }
 
     .specialty {

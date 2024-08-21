@@ -35,13 +35,13 @@ function NavigationMenu({ activeLink, handleLinkClick }) {
       <li>
         <img
           src={Brasil}
-          alt="Bandeira do Brasil"
+          alt={t("flagBrazil")}
           onClick={() => changeLanguage('pt')}
           style={{ cursor: 'pointer' }}
         />
         <img
           src={Eua}
-          alt="Bandeira dos Estados Unidos"
+          alt={t("flagEua")}
           onClick={() => changeLanguage('en')}
           style={{ cursor: 'pointer' }}
         />

@@ -16,10 +16,10 @@ function Home() {
       <Presentation />
       <AboutMe />
       <Projects />
-      <WhatsApp />
       <Certificates />
       <Contact />
       <Footer />
+      <WhatsApp />
     </>
   );
 }

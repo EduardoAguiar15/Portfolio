@@ -4,6 +4,8 @@
     "projetos": "Projects",
     "certificados": "Certificates",
     "contato": "Contact",
+    "flagBrazil": "Flag of Brazil",
+    "flagEua": "Flag of Estados Unidos",
     "logo": "Blue brain with the name Eduardo Aguiar next to it.",
     "name": "Eduardo Aguiar",
     "specialty": "Fullstack Developer",
@@ -53,7 +55,6 @@
     "socialnetworkAlt": "Screen displaying various programming codes.",
     "worldcityAlt": "Home screen showing the city of Sydney, with the sea, some boats and, in the background, several buildings.",
     "inventoryapiAlt": "Screen displaying various programming codes.",
-
     
     
     "certificatesTitle": "Certificates",

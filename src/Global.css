@@ -1,21 +1,34 @@
 :root {
-    --font-family: 'Mouse Memoirs', sans-serif;
+  --font-family: 'Mouse Memoirs', sans-serif;
 
-    --black-button: rgb(41, 40, 40);
-    --blue-header: rgb(0,162,2032);
-    --background-gradient: linear-gradient(90deg, rgb(17, 17, 17) 10%, rgb(40, 21, 56));
-    --background-black: rgb(19 15 22);
-    --light-blue: rgb(0, 162, 232);
-    --white: rgb(255, 255, 255);
-    --dark-bg: rgb(41, 40, 40);
-    --blue-button: rgb(0, 162, 232);
-    --gray-bg: rgb(40, 21, 56);
+  --black-button: rgb(41, 40, 40);
+  --blue-header: rgb(0, 162, 2032);
+  --background-gradient: linear-gradient(90deg, rgb(17, 17, 17) 10%, rgb(40, 21, 56));
+  --background-black: rgb(19 15 22);
+  --light-blue: rgb(0, 162, 232);
+  --white: rgb(255, 255, 255);
+  --dark-bg: rgb(41, 40, 40);
+  --blue-button: rgb(0, 162, 232);
+  --gray-bg: rgb(40, 21, 56);
 
-  }  
+}
+
+@font-face {
+  font-family: 'Mouse Memoirs';
+  src: url('../src/assets/fonts/MouseMemoirs-Regular.woff2') format('woff2'),
+    url('../src/assets/fonts/MouseMemoirs-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body.font-loading {
+  visibility: hidden;
+}
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--light-blue) rgb(40,21,56);
+  scrollbar-color: var(--light-blue) rgb(40, 21, 56);
 }
 
 body {

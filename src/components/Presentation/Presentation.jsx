@@ -22,7 +22,7 @@ function Presentation() {
         <div className='container'>
           <div className='presentation'>
             <h1 className='name'>{t("name")}</h1>
-            <h2 className='specialty'>
+            <h2 className='specialty notranslate'>
               <AnimationText text={text} />
             </h2>
             <p className='text'>{t("text")}</p>
@@ -53,7 +53,7 @@ function Presentation() {
         </div>
         <div className='scroll'>
           <ScrollLink
-            className="Scroller"
+            className="Scroller notranslate"
             to="aboutMe"
             smooth={true}
             duration={500}

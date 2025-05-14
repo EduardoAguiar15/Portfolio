@@ -28,7 +28,7 @@ function Header() {
       <div className='menuCenter'>
         <div>
           <a href="/" className='logoHeader'>
-            <img src={Logo} alt={t("logo")} className='logo' />
+            <img src={Logo} alt={t("logo")} className='logo' fetchpriority="high"/>
           </a>
         </div>
         <nav>

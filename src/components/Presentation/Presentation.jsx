@@ -55,6 +55,7 @@ function Presentation() {
           <ScrollLink
             className="Scroller notranslate"
             to="aboutMe"
+            href="#aboutMe"
             smooth={true}
             duration={500}
             offset={-115}

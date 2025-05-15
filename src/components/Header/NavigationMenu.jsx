@@ -11,6 +11,10 @@ function NavigationMenu({ activeLink, handleLinkClick }) {
 
   const sections = ['inicio', 'sobre', 'projetos', 'certificados', 'contato'];
 
+  const handleClick = (section) => () => {
+    handleLinkClick(section);
+  };
+  
   const changeLanguage = (lng) => {
     if (isAnimationDone) {
       i18n.changeLanguage(lng);
@@ -23,9 +27,10 @@ function NavigationMenu({ activeLink, handleLinkClick }) {
         <li key={section}>
           <ScrollLink
             to={section}
+            href={`#${section}`}
             smooth={true}
             duration={500}
-            onClick={() => handleLinkClick(section)}
+            onClick={handleClick(section)}
             className={activeLink === section ? 'active' : ''}
           >
             {t(section)}

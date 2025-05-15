@@ -23,6 +23,7 @@ function NavigationMenu({ activeLink, handleLinkClick }) {
         <li key={section}>
           <ScrollLink
             to={section}
+            href={`#${section}`}
             smooth={true}
             duration={500}
             onClick={() => handleLinkClick(section)}

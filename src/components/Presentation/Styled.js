@@ -93,6 +93,7 @@ export const StyledHome = styled.main`
     a {
       height: 25px;
       display: flex;
+      text-decoration: none;
       
       &:hover {
         cursor: pointer;

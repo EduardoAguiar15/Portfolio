@@ -47,7 +47,7 @@ function Presentation() {
           </div>
           <div className='centralizerContent'>
             <div className='EduardoImg'>
-              <img src={EduardoImg} alt={t("eduardoAlt")}  fetchpriority="high"/>
+              <img src={EduardoImg} alt={t("eduardoHome")}  fetchpriority="high"/>
             </div>
           </div>
         </div>

@@ -15,6 +15,7 @@ function Footer() {
       </div>
       <ScrollLink
         to="inicio"
+        href="#aboutMe"
         smooth={true}
         duration={500}
       >

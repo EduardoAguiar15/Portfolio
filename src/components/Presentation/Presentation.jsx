@@ -32,7 +32,7 @@ function Presentation() {
                   <img src={Github} alt={t("githubAlt")} className="social-icon" />
                 </div>
               </a>
-              <a href="https://www.linkedin.com/in/eduaguiar1995/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/eduaguiaroficial/" target="_blank" rel="noopener noreferrer">
                 <div className='linkedin'>
                   <img src={Linkedin} alt={t("linkedinAlt")} className="social-icon" />
                 </div>

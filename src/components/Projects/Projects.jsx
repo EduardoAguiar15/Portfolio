@@ -9,10 +9,11 @@ import { useEffect, useState } from 'react';
 import ButtonProjects from './ButtonProjects.jsx';
 import Scroll from '../../assets/imgs/Scroll.png';
 import Scroll2 from "../../assets/imgs/Scroll2.png";
-import titleImg from "../../assets/imgs/title.svg"
-import JavaAPI from "../../assets/imgs/JavaAPI.jpg"
-import CidadeMundo from "../../assets/imgs/CidadesMundo.jpg"
-import EstoqueAPI from "../../assets/imgs/EstoqueAPI.jpg"
+import titleImg from "../../assets/imgs/title.svg";
+import JavaAPI from "../../assets/imgs/JavaAPI.jpg";
+import CidadeMundo from "../../assets/imgs/CidadesMundo.jpg";
+import EstoqueAPI from "../../assets/imgs/EstoqueAPI.jpg";
+import GerenciamentoSkills from "../../assets/imgs/GerenciamentoSkills.jpg";
 import { useTranslation } from 'react-i18next';
 
 function Projects() {
@@ -26,6 +27,7 @@ function Projects() {
   const title5 = t("title5");
   const title6 = t("title6");
   const title7 = t("title7");
+  const title8 = t("title8");
 
   const description1 = t("description1");
   const description2 = t("description2");
@@ -34,10 +36,12 @@ function Projects() {
   const description5 = t("description5");
   const description6 = t("description6");
   const description7 = t("description7");
+  const description8 = t("description8");
 
   const seeLess = t("seeLess");
   const seeMore = t("seeMore");
 
+  const gerenciadorskillsAlt = t("gerenciadorskillsAlt");
   const digitalfitAlt = t("digitalfitAlt");
   const retrogamesAlt = t("retrogamesAlt");
   const corkcapAlt = t("corkcapAlt");
@@ -63,13 +67,14 @@ function Projects() {
   }, [inView]);
 
   const projects = [
-    { title: title1, description: description1, link: "https://youtu.be/48TzurjH5wM", alt: digitalfitAlt },
-    { title: title2, description: description2, repo: "https://github.com/EduardoAguiar15/DesenvolvimentoWeb-SERRATEC", link: "https://youtu.be/blBYIV9z9co", alt: retrogamesAlt },
-    { title: title3, description: description3, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtu.be/9J3Mn8lzWLQ", alt: corkcapAlt },
-    { title: title4, description: description4, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtube.com/shorts/nQdxQwsLDS0", alt: cinehubAlt },
-    { title: title5, description: description5, repo: "https://github.com/EduardoAguiar15/Trabalho-Final-API-Restful", alt: socialnetworkAlt },
-    { title: title6, description: description6, repo: "https://github.com/EduardoAguiar15/CidadeMundo", link: "https://www.youtube.com/watch?v=zyfliERBhMs", alt: worldcityAlt },
-    { title: title7, description: description7, repo: "https://github.com/EduardoAguiar15/crud-produto-api", alt: inventoryapiAlt }
+    { title: title1, description: description1, repo: "https://github.com/EduardoAguiar15/gerenciamento-skills-front.git", link: "https://proj-gerenciamento-skills.vercel.app/", alt: gerenciadorskillsAlt },
+    { title: title2, description: description2, link: "https://youtu.be/48TzurjH5wM", alt: digitalfitAlt },
+    { title: title3, description: description3, repo: "https://github.com/EduardoAguiar15/DesenvolvimentoWeb-SERRATEC", link: "https://youtu.be/blBYIV9z9co", alt: retrogamesAlt },
+    { title: title4, description: description4, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtu.be/9J3Mn8lzWLQ", alt: corkcapAlt },
+    { title: title5, description: description5, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtube.com/shorts/nQdxQwsLDS0", alt: cinehubAlt },
+    { title: title6, description: description6, repo: "https://github.com/EduardoAguiar15/Trabalho-Final-API-Restful", alt: socialnetworkAlt },
+    { title: title7, description: description7, repo: "https://github.com/EduardoAguiar15/CidadeMundo", link: "https://www.youtube.com/watch?v=zyfliERBhMs", alt: worldcityAlt },
+    { title: title8, description: description8, repo: "https://github.com/EduardoAguiar15/crud-produto-api", alt: inventoryapiAlt }
   ];
 
   const visibleProjects = showMore ? projects : projects.slice(0, 4);
@@ -92,18 +97,20 @@ function Projects() {
             key={index}
             image={
               index === 0
-                ? DigitalFit
+                ? GerenciamentoSkills
                 : index === 1
-                  ? RetroGames
+                  ? DigitalFit
                   : index === 2
-                    ? CorkCap
+                    ? RetroGames
                     : index === 3
-                      ? CineHub
+                      ? CorkCap
                       : index === 4
-                        ? JavaAPI
+                        ? CineHub
                         : index === 5
-                          ? CidadeMundo
-                          : EstoqueAPI
+                          ? JavaAPI
+                          : index === 6
+                            ? CidadeMundo
+                            : EstoqueAPI
 
             }
             titleProp={project.title}

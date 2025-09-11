@@ -67,7 +67,7 @@ function Projects() {
   }, [inView]);
 
   const projects = [
-    { title: title1, description: description1, repo: "https://github.com/EduardoAguiar15/gerenciamento-skills-front.git", link: "https://proj-gerenciamento-skills.vercel.app/", alt: gerenciadorskillsAlt },
+    { title: title1, description: description1, repo: "https://github.com/EduardoAguiar15/gerenciamento-skills-front.git", link: "https://www.linkedin.com/feed/update/urn:li:activity:7356448717496815616/", alt: gerenciadorskillsAlt },
     { title: title2, description: description2, link: "https://youtu.be/48TzurjH5wM", alt: digitalfitAlt },
     { title: title3, description: description3, repo: "https://github.com/EduardoAguiar15/DesenvolvimentoWeb-SERRATEC", link: "https://youtu.be/blBYIV9z9co", alt: retrogamesAlt },
     { title: title4, description: description4, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtu.be/9J3Mn8lzWLQ", alt: corkcapAlt },

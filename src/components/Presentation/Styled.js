@@ -181,15 +181,15 @@ export const StyledHome = styled.main`
       padding: 0;
     }
 
-    @media (max-width: 550px) {
+    @media (max-width: 558px) {
       width: 85%;
     }
 
-    @media (max-width: 515px) {
+    @media (max-width: 526px) {
       width: 90%;
     }
 
-    @media (max-width: 486px) {
+    @media (max-width: 498px) {
       width: 95%;
     }
 

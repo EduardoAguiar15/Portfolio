@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledHome } from './Styled.js';
-import EduardoImg from '../../assets/imgs/fundo.png';
+import EduardoImg from '../../assets/imgs/fotoFundo2.png';
 import Github from "../../assets/imgs/github.svg";
 import Linkedin from "../../assets/imgs/linkedin.svg";
 import Instagram from "../../assets/imgs/instagram.svg";

@@ -140,7 +140,7 @@ export const StyledHome = styled.main`
     justify-content: space-between;
     align-items: center;
     max-width: 1300px;
-    width: 76%;
+    width: 82%;
 
     @media (max-width: 1370px) {
       width: 80%;
@@ -402,28 +402,24 @@ export const StyledHome = styled.main`
     }
 
     img {
-      width: 70%;
+      width: 62%;
       height: auto;
       z-index: 1;
 
       @media (max-width: 1390px) {
-        width: 75%;
+        width: 68%;
       }
 
       @media (max-width:1320px) {
-        width: 80%;
+        width: 74%;
       }
-
-      @media (max-width:1185px) {
-        width: 84%;
-      }
-      
+        
       @media (max-width:1050px) {
-        width: 92%;
+        width: 85%;
       }
 
       @media (max-width:950px) {
-        width: 100%;
+        width: 92%;
       }
     }
   }

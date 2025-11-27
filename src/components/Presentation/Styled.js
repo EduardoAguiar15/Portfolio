@@ -140,7 +140,7 @@ export const StyledHome = styled.main`
     justify-content: space-between;
     align-items: center;
     max-width: 1300px;
-    width: 76%;
+    width: 77%;
 
     @media (max-width: 1370px) {
       width: 80%;

@@ -18,17 +18,17 @@ Ele conta com animações de tela, internacionalização, integração com servi
 ## Deploy da aplicação 🌐
 - https://eduardoaguiar.vercel.app/
 
-## Como executar 🚀
+# Como executar 🚀
 
-# Clonar o repositório
+## Clonar o repositório
 git clone https://github.com/EduardoAguiar15/Portfolio.git
 
-# Entrar na pasta
+## Entrar na pasta
 cd Portfolio
 
-# Instalar dependências
+## Instalar dependências
 npm install
 
-# Rodar o projeto
+## Rodar o projeto
 npm start
 

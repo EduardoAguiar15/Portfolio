@@ -22,7 +22,7 @@ Ele conta com animações de tela, internacionalização, integração com servi
 - https://eduardoaguiar.vercel.app/
 
 
-# 🚀 Como executar
+## 🚀 Como executar
 
 ## Clonar o repositório
 - git clone https://github.com/EduardoAguiar15/Portfolio.git

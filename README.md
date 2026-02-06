@@ -30,11 +30,15 @@ Ele conta com animações de tela, internacionalização, integração com servi
 ```
 
 ## Entrar na pasta
+```bash
 - cd Portfolio
+```
 
 ## Instalar dependências
+```bash
 - npm install
-
+```
 ## Rodar o projeto
+```bash
 - npm start
-
+```

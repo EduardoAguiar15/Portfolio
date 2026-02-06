@@ -26,19 +26,19 @@ Ele conta com animações de tela, internacionalização, integração com servi
 
 ## Clonar o repositório
 ```bash
-- git clone https://github.com/EduardoAguiar15/Portfolio.git
+git clone https://github.com/EduardoAguiar15/Portfolio.git
 ```
 
 ## Entrar na pasta
 ```bash
-- cd Portfolio
+cd Portfolio
 ```
 
 ## Instalar dependências
 ```bash
-- npm install
+npm install
 ```
 ## Rodar o projeto
 ```bash
-- npm start
+npm start
 ```

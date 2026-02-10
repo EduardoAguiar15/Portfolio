@@ -24,21 +24,17 @@ Ele conta com animações de tela, internacionalização, integração com servi
 
 ## 🚀 Como executar
 
-- Clonar o repositório
+- **Clonar o repositório**
 ```bash
 git clone https://github.com/EduardoAguiar15/Portfolio.git
 ```
 
-- Entrar na pasta
-```bash
-cd Portfolio
-```
-
-- Instalar dependências
+- **Instalar dependências**
 ```bash
 npm install
 ```
-- Rodar o projeto
+
+- **Rodar o projeto**
 ```bash
 npm start
 ```

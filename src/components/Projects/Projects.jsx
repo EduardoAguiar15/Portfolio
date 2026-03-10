@@ -1,8 +1,13 @@
 import { StyledProject, StyledH1, StyledH1Image, StyledButton } from './Styled.js';
+import GerenciamentoSkills from "../../assets/imgs/GerenciamentoSkills.jpg";
 import DigitalFit from "../../assets/imgs/DigitalFit.jpg";
+import ReactGram from "../../assets/imgs/ReactGram.png";
+import CineHub from "../../assets/imgs/CineHub.jpg";
 import RetroGames from "../../assets/imgs/RetroGames.jpg";
 import CorkCap from "../../assets/imgs/CorkCap.jpg";
-import CineHub from "../../assets/imgs/CineHub.jpg";
+import JavaAPI from "../../assets/imgs/JavaAPI.jpg";
+import CidadeMundo from "../../assets/imgs/CidadesMundo.jpg";
+import EstoqueAPI from "../../assets/imgs/EstoqueAPI.jpg";
 import ProjectsComponent from "../ProjectsComponent/ProjectsComponent.jsx";
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
@@ -10,10 +15,6 @@ import ButtonProjects from './ButtonProjects.jsx';
 import Scroll from '../../assets/imgs/Scroll.png';
 import Scroll2 from "../../assets/imgs/Scroll2.png";
 import titleImg from "../../assets/imgs/title.svg";
-import JavaAPI from "../../assets/imgs/JavaAPI.jpg";
-import CidadeMundo from "../../assets/imgs/CidadesMundo.jpg";
-import EstoqueAPI from "../../assets/imgs/EstoqueAPI.jpg";
-import GerenciamentoSkills from "../../assets/imgs/GerenciamentoSkills.jpg";
 import { useTranslation } from 'react-i18next';
 
 function Projects() {
@@ -28,6 +29,7 @@ function Projects() {
   const title6 = t("title6");
   const title7 = t("title7");
   const title8 = t("title8");
+  const title9 = t("title9");
 
   const description1 = t("description1");
   const description2 = t("description2");
@@ -37,15 +39,17 @@ function Projects() {
   const description6 = t("description6");
   const description7 = t("description7");
   const description8 = t("description8");
+  const description9 = t("description9");
 
   const seeLess = t("seeLess");
   const seeMore = t("seeMore");
 
   const gerenciadorskillsAlt = t("gerenciadorskillsAlt");
   const digitalfitAlt = t("digitalfitAlt");
+  const reactgramAlt = t("reactgramAlt");
+  const cinehubAlt = t("cinehubAlt");
   const retrogamesAlt = t("retrogamesAlt");
   const corkcapAlt = t("corkcapAlt");
-  const cinehubAlt = t("cinehubAlt");
   const socialnetworkAlt = t("socialnetworkAlt");
   const worldcityAlt = t("worldcityAlt");
   const inventoryapiAlt = t("inventoryapiAlt");
@@ -69,12 +73,13 @@ function Projects() {
   const projects = [
     { title: title1, description: description1, repo: "https://github.com/EduardoAguiar15/gerenciamento-skills-front.git", link: "https://www.linkedin.com/feed/update/urn:li:activity:7356448717496815616/", alt: gerenciadorskillsAlt },
     { title: title2, description: description2, link: "https://youtu.be/48TzurjH5wM", alt: digitalfitAlt },
-    { title: title3, description: description3, repo: "https://github.com/EduardoAguiar15/DesenvolvimentoWeb-SERRATEC", link: "https://youtu.be/blBYIV9z9co", alt: retrogamesAlt },
-    { title: title4, description: description4, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtu.be/9J3Mn8lzWLQ", alt: corkcapAlt },
-    { title: title5, description: description5, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtube.com/shorts/nQdxQwsLDS0", alt: cinehubAlt },
-    { title: title6, description: description6, repo: "https://github.com/EduardoAguiar15/Trabalho-Final-API-Restful", alt: socialnetworkAlt },
-    { title: title7, description: description7, repo: "https://github.com/EduardoAguiar15/CidadeMundo", link: "https://www.youtube.com/watch?v=zyfliERBhMs", alt: worldcityAlt },
-    { title: title8, description: description8, repo: "https://github.com/EduardoAguiar15/crud-produto-api", alt: inventoryapiAlt }
+    { title: title3, description: description3, repo: "https://github.com/EduardoAguiar15/ReactGram", link: "https://youtu.be/4ZrWNuqg53Y", alt: reactgramAlt },
+    { title: title4, description: description4, repo: "https://github.com/EduardoAguiar15/TrabalhoFinal-ReactNative", link: "https://youtube.com/shorts/nQdxQwsLDS0", alt: cinehubAlt },
+    { title: title5, description: description5, repo: "https://github.com/EduardoAguiar15/DesenvolvimentoWeb-SERRATEC", link: "https://youtu.be/blBYIV9z9co", alt: retrogamesAlt },
+    { title: title6, description: description6, repo: "https://github.com/EduardoAguiar15/Frontend-SERRATEC", link: "https://youtu.be/9J3Mn8lzWLQ", alt: corkcapAlt },
+    { title: title7, description: description7, repo: "https://github.com/EduardoAguiar15/Trabalho-Final-API-Restful", alt: socialnetworkAlt },
+    { title: title8, description: description8, repo: "https://github.com/EduardoAguiar15/CidadeMundo", link: "https://www.youtube.com/watch?v=zyfliERBhMs", alt: worldcityAlt },
+    { title: title9, description: description9, repo: "https://github.com/EduardoAguiar15/crud-produto-api", alt: inventoryapiAlt }
   ];
 
   const visibleProjects = showMore ? projects : projects.slice(0, 4);
@@ -101,14 +106,16 @@ function Projects() {
                 : index === 1
                   ? DigitalFit
                   : index === 2
-                    ? RetroGames
+                    ? ReactGram
                     : index === 3
-                      ? CorkCap
+                      ? CineHub
                       : index === 4
-                        ? CineHub
+                        ? RetroGames
                         : index === 5
-                          ? JavaAPI
+                          ? CorkCap
                           : index === 6
+                            ? JavaAPI
+                            : index === 7
                             ? CidadeMundo
                             : EstoqueAPI
 

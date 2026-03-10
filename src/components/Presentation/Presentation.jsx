@@ -9,7 +9,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Button from "../Button/Button.jsx";
 import AnimationText from './AnimationText.jsx';
 import { useTranslation } from 'react-i18next';
-import Curriculum from "../../assets/pdfs/Curriculum.pdf"
+import Curriculum from "../../assets/pdfs/CarlosEduardoAguiar_Desenvolvedor.pdf"
 
 function Presentation() {
   const { t } = useTranslation();
